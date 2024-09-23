@@ -1,0 +1,15 @@
+C:\dev\visitors\VisitorPractical\bin\Debug\net8.0\VisitorPractical.exe
+C:\dev\visitors\VisitorPractical\bin\Debug\net8.0\VisitorPractical.deps.json
+C:\dev\visitors\VisitorPractical\bin\Debug\net8.0\VisitorPractical.runtimeconfig.json
+C:\dev\visitors\VisitorPractical\bin\Debug\net8.0\VisitorPractical.dll
+C:\dev\visitors\VisitorPractical\bin\Debug\net8.0\VisitorPractical.pdb
+C:\dev\visitors\VisitorPractical\obj\Debug\net8.0\VisitorPractical.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\visitors\VisitorPractical\obj\Debug\net8.0\VisitorPractical.AssemblyInfoInputs.cache
+C:\dev\visitors\VisitorPractical\obj\Debug\net8.0\VisitorPractical.AssemblyInfo.cs
+C:\dev\visitors\VisitorPractical\obj\Debug\net8.0\VisitorPractical.csproj.CoreCompileInputs.cache
+C:\dev\visitors\VisitorPractical\obj\Debug\net8.0\VisitorPractical.sourcelink.json
+C:\dev\visitors\VisitorPractical\obj\Debug\net8.0\VisitorPractical.dll
+C:\dev\visitors\VisitorPractical\obj\Debug\net8.0\refint\VisitorPractical.dll
+C:\dev\visitors\VisitorPractical\obj\Debug\net8.0\VisitorPractical.pdb
+C:\dev\visitors\VisitorPractical\obj\Debug\net8.0\VisitorPractical.genruntimeconfig.cache
+C:\dev\visitors\VisitorPractical\obj\Debug\net8.0\ref\VisitorPractical.dll
