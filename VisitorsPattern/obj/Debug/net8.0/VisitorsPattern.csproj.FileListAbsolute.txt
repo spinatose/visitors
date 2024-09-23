@@ -1,0 +1,15 @@
+C:\dev\visitors\VisitorsPattern\bin\Debug\net8.0\VisitorsPattern.exe
+C:\dev\visitors\VisitorsPattern\bin\Debug\net8.0\VisitorsPattern.deps.json
+C:\dev\visitors\VisitorsPattern\bin\Debug\net8.0\VisitorsPattern.runtimeconfig.json
+C:\dev\visitors\VisitorsPattern\bin\Debug\net8.0\VisitorsPattern.dll
+C:\dev\visitors\VisitorsPattern\bin\Debug\net8.0\VisitorsPattern.pdb
+C:\dev\visitors\VisitorsPattern\obj\Debug\net8.0\VisitorsPattern.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\visitors\VisitorsPattern\obj\Debug\net8.0\VisitorsPattern.AssemblyInfoInputs.cache
+C:\dev\visitors\VisitorsPattern\obj\Debug\net8.0\VisitorsPattern.AssemblyInfo.cs
+C:\dev\visitors\VisitorsPattern\obj\Debug\net8.0\VisitorsPattern.csproj.CoreCompileInputs.cache
+C:\dev\visitors\VisitorsPattern\obj\Debug\net8.0\VisitorsPattern.sourcelink.json
+C:\dev\visitors\VisitorsPattern\obj\Debug\net8.0\VisitorsPattern.dll
+C:\dev\visitors\VisitorsPattern\obj\Debug\net8.0\refint\VisitorsPattern.dll
+C:\dev\visitors\VisitorsPattern\obj\Debug\net8.0\VisitorsPattern.pdb
+C:\dev\visitors\VisitorsPattern\obj\Debug\net8.0\VisitorsPattern.genruntimeconfig.cache
+C:\dev\visitors\VisitorsPattern\obj\Debug\net8.0\ref\VisitorsPattern.dll
