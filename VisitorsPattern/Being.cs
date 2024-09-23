@@ -4,45 +4,45 @@ using System.Diagnostics.Contracts;
 
 public class ManInBlack: Being, IVisitor
 {
-    public ManInBlack(string name) : base(name) { }
+    public ManInBlack(string name = "Agent MIB") : base(name) { }
 
     public override void Accept(IVisitor visitor) => visitor.Visit(this);
 
     public void Visit(Human human)
     {
-        human.VisitResult = "ManInBlack visits human";
+        human.VisitResult = $"{human.Name}'s mind has been wiped by {Name}";
     }
 
     public void Visit(Animal animal)
     {
-        animal.VisitResult = "ManInBlack visits animal";
+        animal.VisitResult = $"{animal.Name} has provided radioactive hamburgers to {Name}";
     }
     
     public void Visit(Being being)
     {
-        being.VisitResult = "ManInBlack visits unknown entity";
+        being.VisitResult = $"{Name} visits unknown entity";
     }
 }
 
 public class ExtraTerrestrial: Being, IVisitor
 {
-    public ExtraTerrestrial(string name) : base(name) { }
+    public ExtraTerrestrial(string name = "ExtraTerrestrial") : base(name) { }
 
     public override void Accept(IVisitor visitor) => visitor.Visit(this);
 
     public void Visit(Human human)
     {
-        human.VisitResult = "ExtraTerrestrial visits human";
+        human.VisitResult = $"{Name} injects {human.Name} with bio-electric tracking implant";
     }
 
     public void Visit(Animal animal)
     {
-        animal.VisitResult = "ExtraTerrestrial visits animal";
+        animal.VisitResult = $"{Name} performs tissue sampling mutilation on {animal.Name}";
     }
 
     public void Visit(Being being)
     {
-        being.VisitResult = "ExtraTerrestrial visits unknown entity";
+        being.VisitResult = $"{Name} abducts {being.Name}";
     }
 }
 
@@ -66,14 +66,14 @@ public interface IVisitor
 
 public class Animal: Being
 {
-    public Animal(string name): base(name) { }
+    public Animal(string name = "Creature"): base(name) { }
 
     public override void Accept(IVisitor visitor) => visitor.Visit(this);
 }
 
 public class Human: Being
 {
-    public Human(string name) : base(name) { }
+    public Human(string name = "Person of Interest") : base(name) { }
 
     public override void Accept(IVisitor visitor) => visitor.Visit(this);
 }
