@@ -1,6 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Shopping Time!\n");
-
 Invoice invoice = new Invoice
 {
     Customer = "John Doe",

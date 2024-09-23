@@ -2,9 +2,7 @@ public abstract class InvoiceItem {
     public string Name { get; set; } = "Item";
     public decimal Price { get; set; }
     public int Quantity { get; set; }
-
     public abstract void Accept(InvoiceVisitor visitor);
-
 }
 
 public class Grocery : InvoiceItem
@@ -16,10 +14,7 @@ public class Grocery : InvoiceItem
         Quantity = itemQuantity;
     }
     
-    public override void Accept(InvoiceVisitor visitor)
-    {
-        visitor.Visit(this);
-    }
+    public override void Accept(InvoiceVisitor visitor) => visitor.Visit(this);
 }
 
 public class Merchandise : InvoiceItem
@@ -31,10 +26,7 @@ public class Merchandise : InvoiceItem
         Quantity = itemQuantity;
     }
     
-    public override void Accept(InvoiceVisitor visitor)
-    {
-        visitor.Visit(this);
-    }
+    public override void Accept(InvoiceVisitor visitor) => visitor.Visit(this);
 }
 
 public class Invoice: InvoiceItem
@@ -97,18 +89,13 @@ public class DiscountVisitor : InvoiceVisitor
 public class SalesTaxVisitor : InvoiceVisitor
 {
     public decimal SalesTax { get; set; }
-
     public void Visit(Invoice invoice)
     {
         Console.WriteLine($"\tCalculating {SalesTax * 100}% sales tax for {invoice.Customer}");
     }
-
-    public void Visit(Grocery invoiceItem)
-    {
+    public void Visit(Grocery invoiceItem) => 
         Console.WriteLine($"\t\t{invoiceItem.Name} is a grocery item and is not eligible for sales tax");
-    }
-
-    public void Visit(Merchandise item)
+    public void Visit(Merchandise item) 
     {
         item.Price *= (1 + SalesTax);
         Console.WriteLine($"\t\t{item.Name} price is now {item.Price:C}");
@@ -118,27 +105,15 @@ public class SalesTaxVisitor : InvoiceVisitor
 public class TotalsVisitor: InvoiceVisitor
 {
     public decimal Total { get; set; }
-
     public void Visit(Invoice invoice)
     {
         Console.WriteLine($"\nTotaling items for {invoice.Customer}");
         foreach (var item in invoice.Items)
-        {
             Total += item.Price * item.Quantity;
-        }
-
         Console.WriteLine($"\tTotal is {Total:C}");
     }
-
-    public void Visit(Grocery invoiceItem)
-    {
-        // do nothing
-    }
-
-    public void Visit(Merchandise invoiceItem)
-    {
-        // do nothing
-    }
+    public void Visit(Grocery invoiceItem) { }
+    public void Visit(Merchandise invoiceItem) { }
 }
 
 public class LineItemVisitor: InvoiceVisitor
